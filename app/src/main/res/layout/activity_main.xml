@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_height="100dp"
+        android:layout_width="300dp"
+        app:layout_constraintVertical_bias="0.131"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        android:text="@string/hello_there"
+        android:textStyle="normal"
+        android:textSize="26dp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:id="@+id/tvSpeechOutput"/>
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="48dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:id="@+id/linearLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+    <ImageButton
+        android:background="@drawable/mic_icon"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:id="@+id/btnSpeak"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/tap_on_mic"
+        android:textStyle="normal"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"/>
+
+</LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
